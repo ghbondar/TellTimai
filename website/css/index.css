@@ -11,8 +11,10 @@ body {
 }
 
 div#images img {
-height: 200px;
-/*display:inline-block*/
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 100%;
+  width: 500px;
 }
 
 div#nav_wide {
