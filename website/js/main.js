@@ -11,7 +11,7 @@ function openWin() {
 /* ebb: This javascript rotates images on reload from server*/
 function rotate() {
     var thisImage = 0;
-    var images = new Array ('img/1.jpg', 'img/2.jpg', 'img/3.jpg' )
+    var images = new Array ('img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg', 'img/6.jpg', 'img/7.jpg' )
     
     /* ebb: This line randomizes the order of the images:*/
     var thisImage = Math.floor(Math.random() *(images.length));
