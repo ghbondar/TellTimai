@@ -1,14 +1,24 @@
+window.onload = init;
+rotate;
+
 function init() {
     rotate();
+    elementDisplay();
 }
 
+/* ghb: This function prevents the header-element from displaying in the news feed.  */
+function elementDisplay() {
+  var iframe = document.getElementById("news");
+  var elmnt = iframe.contentWindow.document.getElementsByTagName("header")[0];
+  elmnt.style.display = "none";
+}
 
-/* ghb: This javascript open a UHawaii payment window */
+/* ghb: This function opens a UHawaii payment window */
 function openWin() {
   window.open("https://giving.uhfoundation.org/funds/12650604?fbclid=IwAR3jjnU_kIlMmI5VczytWSEsHAR4Fe1e0ajpMcXkIZoyktCSbAuKDv-gg6w");
 }
 
-/* ebb: This javascript rotates images on reload from server*/
+/* ebb: This function randomly rotates the images */
 function rotate() {
     var thisImage = 0;
     var images = new Array ('img/1.jpg', 'img/2.jpg', 'img/3.jpg', 'img/4.jpg', 'img/5.jpg', 'img/6.jpg', 'img/7.jpg' )
@@ -33,9 +43,8 @@ document.getElementById("rotator").src = images[thisImage];
 setTimeout(rotate, 5 * 1000);
 }*/
 
-window.onload = init;
-rotate;
-
-/* ghb 2019-01-11: Change Log: */
-/* ghb 2019-01-11: Adapted this javascript from digitalmitford.org */
-/* ghb 2019-01-19: added openWin fcn from w3schools.com */
+/* ghb 2019-01-11: Change Log:
+* ghb 2019-01-11: Adapted this javascript from digitalmitford.org
+* ghb 2019-01-19: added openWin fcn from w3schools.com
+* ghb 2019-02-03: added elementDisplay fcn
+* */

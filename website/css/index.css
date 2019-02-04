@@ -7,24 +7,24 @@ html {
 
 body {
     text-align:left;
-    width:100%; 
+    width:98%; 
 }
 
-div#images img {
+img#rotator {
   object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
-  height: 300px;
+  height:300px;
+  width:400px;
 }
 
-div#nav_wide {
-/* background-image: url("mrmBlur.jpg"); */
+header {
 padding:0; 
 width:100%; 
 position:relative; 
 top:-35px;
 }
 
-div#menu {
+nav {
 width:100%; 
 height:100%; 
 display:flex; 
@@ -76,53 +76,47 @@ ul.subSec li {text-align:left; font-size:1em; font-weight:700; padding-top:2px; 
   text-shadow: 1px -1px white;
 }
 
-div#container{width:99%; display:flex; justify-content:flex-start; align-items:flex-start; flex-flow: row;
+article.news {margin-bottom:5px; width:95%; display:flex; justify-content:flex-start; align-items:flex-start; flex-flow: row;
 }
-span#wpTitle{float:right}
-div#media{width:100%; display:flex; justify-content:space-around; padding:5px; align-items:flex-start; flex-direction:row;
+article div {flex:3;}
+article.even a img {padding-left:20px; flex:1;
 }
-div#img{flex:1;}
-div#floatright{
-flex:2; display:flex; justify-content:space-between; align-items:flex-start; flex-direction:column;
-/*margin-left: 75px;
-margin-right:auto;
-padding: 10px 5px 50px 20px;*/
+article.odd a img {padding-right:20px; flex:1;
 }
-div#welcome {width:100%;}
-
-div#contact {width:100%; display:flex;  justify-content:space-between; align-items:flex-start; flex-direction:row;}
-/*div#mail {flex:3;}*/
-div#twitter{flex:1;}
-span.iframe {flex:3; }
-
-p.boilerplate{width:100%;}
-p.boilerplate span {text-indent:-1em;
-    margin-left:1em;
-    display:block;
-    font-size:smaller;
-    line-height:1.4em;
-   }
    
+img.news{ height:200px; 
+}
+img.pubs{ width:200px; 
+}
+iframe#news {flex:3; height:500px; padding:10px; margin-right:10px; background-color:/*#F8F8FF;*/#FFDB90;
+}
+iframe#updates {height:243px; padding-left:10px; margin-right:10px; margin-left:10px; background-color:#FFDB90; border-radius:10px;
+}
+
+.container{width:95%; display:flex; justify-content:flex-start; align-items:flex-start; flex-flow: row;
+}
+#container{width:95%; display:flex; justify-content:flex-start; align-items:flex-start; flex-flow: row;
+}
+.media{width:95%; display:flex; justify-content:flex-start; align-items:flex-start; flex-flow: row; margin:10px;
+}
+/* div.left {color: maroon; display:block; text-align:center; font-size:1.9em; margin-top:5px; padding:15px;
+} */
+div.center {color:#00005C; display:block; text-align:center; font-size:1.7em; margin-top:100px; padding-left:30px; padding-right:30px; margin-right:15px;
+}
+div.headline h2{}
+div.headline h3{}
+div#img{flex:1;}
+div#welcome {width:100%;}
+div#contact {width:100%; display:flex;   justify-content:space-between; align-items:flex-start; flex-direction:row;}
+/*div#twitter{flex:1;}
+
+span#wpTitle{float:right}*/
+
 p {padding-right:40px; padding-left:10px;}
-
-h1 {
-color:/*#A04747*/ #1C373A;
-letter-spacing:3px;
-display:block;
-text-align:center;
-font-size:1.3em;}
-div#title h1 {background-color:#FFED90;}
-
-h2 {color:/*#00005C*/ maroon; font-size:1.7em;  display:block; text-align:center; padding:15px; margin-top:5px;
-}
-
-h3 {color:#00005C; display:block; /*text-indent:1.5em*/; text-align:center; font-size:1.5em; margin-top:135px; margin-right:15px;
-}
 
 /*img{
 border-radius:10px;
 }*/
-
 
 a{
 color:/* #2929A3;*/ #B90F0F;
@@ -130,19 +124,9 @@ text-decoration:none;}
 a:hover{
 text-decoration:underline;}
 
-span.anchor {
-color:blue;
- text-decoration:underline;   
-}
-
-
-       
-/*span.anchor span.note:hover span, span.anchor span.note:active span {
-    display:inline;
-}*/
-
 /* ghb 2019-01-11: Change log:
  * ghb 2019-01-11: Adapted from digitalmitford.org
  * ghb 2019-01-20: deleting rule-sets specific to MS-editing.
  * ghb 2019-01-20: adding rulesets for form/input/button elements.
+ * ghb 2019-02-03: replacing styling on div-elements with semanitc elements.
  * */

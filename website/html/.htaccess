@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond % ^www.telltimai.org [NC]
+RewriteRule ^(.*)$ http://telltimai.org/$1 [R=301,NC]
