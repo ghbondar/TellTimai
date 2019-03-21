@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <!-- ghb 2019-01-11: Created Home Page for telltimai.org on newtfire.org server. -->
+    <head>
+        <meta name="description" content="Tell Timai Archaeological Project: Home Page" />
+        <meta name="author" content="Gregory Bondar" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script src="http://www.telltimai.org/js/main.js"></script>
+        <title>Tell Timai Archaeological Project</title>
+
+    </head>
+
+    <body>
+        <!-- Menu Bar added by ssi -->
+        <!--#include virtual="ssi/mainMenu.html" -->
+        <main>
+            <section class="container">
+                <div class="left">
+                    <p><strong>What's New on the Website?</strong></p>
+                    <iframe id="updates" src="ssi/updates.html"></iframe>
+                </div>
+                <div class="center">Promoting Scholastic Research &amp; Exploration<br /><a
+                        href="http://telltimai.org/pdf/Timai-2019-Announcement.pdf">Are you ready to
+                        begin your journey?</a></div>
+                <img id="rotator" src="img/rotator/1.jpg" alt="Tell Timai Project Pictures" />
+            </section>
+            <section class="media">
+
+                <!-- News frame -->
+                <iframe id="news" src="html/news.html"></iframe>
+
+                <div id="socialMedia">
+                    <div style="text-align:center">
+                        <!-- Selector Tabs -->
+                        <span class="dot" onclick="currentSlide(1)"><img class="feed"
+                                src="http://www.telltimai.org/img/badges/logo-instagram-text.png"
+                                alt="instagram badge" /></span>
+                        <span class="dot" onclick="currentSlide(2)"><img class="feed"
+                                src="http://www.telltimai.org/img/badges/logo-facebook-text.png"
+                                alt="facebook badge" /></span>
+                        <span class="dot" onclick="currentSlide(3)"><img class="feed"
+                                src="http://www.telltimai.org/img/badges/logo-twitter-text.png"
+                                alt="twitter badge" /></span>
+                    </div>
+                    <div class="slideshow-container">
+                        <div class="mediaSlide fade" id="instagram">
+                            <!-- Instagram Feed -->
+                            <a href="https://instawidget.net/v/user/telltimaiproject"
+                                id="link-d12d39e0dc7c1deb03fe7c3fa21b75537eab710832e998abe6ca10abc9058917"
+                                >@telltimaiproject</a>
+                            <script src="https://instawidget.net/js/instawidget.js?u=d12d39e0dc7c1deb03fe7c3fa21b75537eab710832e998abe6ca10abc9058917&amp;width=400px&amp;height=500px"></script>
+                            <!-- ghb 2019-02-11: This is needed in the index.html for the Instagram feed to run. -->
+                            <script>showSlides(slideIndex);</script>
+                        </div>
+
+                        <div class="mediaSlide fade" id="facebook">
+                            <!-- Facebook Feed -->
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTellTimai%2F&amp;tabs=timeline&amp;width=400&amp;height=564&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId"
+                                width="400" height="564" style="border:none;overflow:hidden"
+                            > </iframe>
+                        </div>
+
+                        <div class="mediaSlide fade" id="twitter">
+                            <!-- Twitter Feed -->
+                            <a class="twitter-timeline" data-width="400" data-height="564"
+                                data-link-color="#B90F0F"
+                                href="https://twitter.com/TellTimai?ref_src=twsrc%5Etfw">Tweets by
+                                TellTimai</a>
+                            <script async="async" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+
+                        <!-- Next/Prev-slide Buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                        <!-- Wordpress Window and Index-->
+                        <!-- <span id="wpTitle">Tell Timai Wordpress Blog</span>
+                 <iframe width="1000" height="500" src="https://digitalmitford.wordpress.com"/>
+                 <span id="wpTitle">Tell Timai Wordpress Blog Index</span>
+                 <script language="JavaScript" src="http://feed2js.org//feed2js.php?src=https://digitalmitford.wordpress.com/feed/&chan=y&au=y&date=y&utf=y&html=a"  charset="UTF-8" type="text/javascript"></script>
+                 <noscript><a href="http://feed2js.org//feed2js.php?src=https://digitalmitford.wordpress.com/feed/&chan=y&au=y&date=y&utf=y&html=y">View RSS feed</a></noscript>
+            -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <!--ghb 2019-01-11: Change Log:
+        ghb 2019-01-11: Tell Timai Home Page created to demonstrate capabilities of writing webpages in html.
+        eeb 2019-01-14: Commented-out example blog-window linked to digitalmitford.
+        ghb 2019-01-20: Added News-feed in place of blog-window.
+        ghb 2019-02-11: Added Social Media Feed carousel.
+        -->
+</html>
